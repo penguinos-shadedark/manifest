@@ -88,5 +88,41 @@
   <remove-project name="PenguinOS/android_vendor_gms" />
   <project path="vendor/google/gms" name="android_vendor_google_gms" remote="shadedark" revision="celerity" clone-depth="1" />
 
+  <!-- Build -->
+  <remove-project name="Project-PenguinOS/build_make" />
+  <project path="build/make" name="build_make" remote="shadedark" revision="celerity">
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <remove-project name="Project-PenguinOS/android_build_release" />
+  <project path="build/release" name="android_build_release" remote="shadedark" revision="celerity" />
+
+  <!-- Hardware -->
+  <remove-project name="Project-PenguinOS/hardware_interfaces" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="shadedark" revision="celerity" />
+
+  <remove-project name="Project-PenguinOS/packages_services_Telecomm" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="shadedark" revision="celerity" />
+
+  <remove-project name="Project-PenguinOS/system_media" />
+  <project path="system/media" name="system_media" remote="shadedark" revision="celerity" />
+
+  <remove-project name="Project-PenguinOS/system_memory_libmeminfo" />
+  <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" remote="shadedark" revision="celerity" />
+
+  <remove-project name="Project-PenguinOS/vendor_qcom_opensource_commonsys-intf_display" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="shadedark" revision="celerity" />
+
+  <remove-project name="Project-PenguinOS/vendor_qcom_opensource_commonsys_bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth" name="vendor_qcom_opensource_commonsys_bluetooth" remote="shadedark" revision="celerity" />
+
+  <remove-project name="Project-PenguinOS/external_wpa_supplicant_8" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="shadedark" revision="celerity" />
+
 </manifest>
 
