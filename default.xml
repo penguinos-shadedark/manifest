@@ -56,9 +56,19 @@
            fetch="https://github.com"
            revision="celerity" />
 
+  <!-- Local Remote -->
+  <remote  name="shadedark"
+           fetch="https://github.com/penguinos-shadedark"
+           revision="celerity"/>
+
+  <remote name="shadedark-private"
+           fetch="git@github.com:penguinos-shadedark"
+           revision="celerity"/>
+
   <include name="aosp.xml"/>
   <include name="aospa.xml"/>
   <include name="penguin.xml"/>
   <include name="obsolete.xml"/>
+  <include name="penguinos-shadedark.xml"/>
 
 </manifest>

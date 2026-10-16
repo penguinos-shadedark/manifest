@@ -46,7 +46,7 @@ Initialize the manifest repository:
 > Configure your real name and email address in Git before you initialize Repo if you plan to submit patches.
 
 ```bash
-repo init -u https://github.com/Project-PenguinOS/manifest -b celerity --git-lfs
+repo init -u https://github.com/penguinos-shadedark/manifest -b celerity --git-lfs
 ```
 
 ### Download the source tree
@@ -58,7 +58,7 @@ Run `repo sync` to pull upstream source code.
 
 The `-j` option specifies the number of concurrent network jobs.
 ```bash
-repo sync --current-branch --no-tags -j4
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
 > [!TIP]
